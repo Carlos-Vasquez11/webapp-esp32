@@ -1,52 +1,42 @@
-# Prerequisites
-*.d
+tools/xtensa-esp32-elf
+tools/xtensa-esp32s2-elf
+tools/xtensa-esp32s3-elf
+tools/riscv32-esp-elf
+tools/dist
+tools/esptool
+tools/esptool.exe
+tools/mkspiffs
+tools/mklittlefs
+tools/mkfatfs.exe
+tools/openocd-esp32
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# Ignore editor backup files and macOS system metadata
+.DS_Store
+.*.swp
+.*.swo
+*~
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# Ignore build folder
+/build
+ 
+# Ignore files built by Visual Studio/Visual Micro
+[Dd]ebug/
+[Rr]elease/
+.vs/
+__vm/
+*.vcxproj*
+.vscode/
+platform.sloeber.txt
+boards.sloeber.txt
 
-# Precompiled Headers
-*.gch
-*.pch
+# Ignore docs build (Sphinx)
+docs/build
+docs/source/_build
+__pycache__/
+_build/
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# Test log files
+*.log
+debug.cfg
+debug.svd
+debug_custom.json
